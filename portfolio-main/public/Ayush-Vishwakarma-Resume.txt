@@ -1,0 +1,29 @@
+Ayush Vishwakarma
+Portfolio Resume Summary
+
+Professional Direction
+Full Stack Developer with a strong foundation in modern web development and a growing focus on enterprise and cloud-oriented technologies.
+
+Journey
+- Completed Full Stack Development learning at NxtWave from 2022 to 2024
+- Built projects across HTML, CSS, JavaScript, React, Node.js, Python, and databases
+- Joined ITDesign in 2024 and currently working there
+
+Current Skill Growth
+- Java
+- Clarity PPM
+- AWS
+- SQL
+- Docker
+
+Core Strengths
+- Frontend development with React and responsive UI thinking
+- Full stack foundations across frontend, backend, and databases
+- Strong learning mindset and continuous skill growth
+
+Portfolio Links
+LinkedIn: https://www.linkedin.com/in/ayush-vishwakarmaa/
+GitHub: https://github.com/ayushvishwakarma12
+
+Note
+Replace this file with your final PDF resume whenever it is ready.

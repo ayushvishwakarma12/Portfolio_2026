@@ -421,6 +421,63 @@ nav.navbar .navbar-toggler-icon::after {
 
 /* Skills */
 
+.about-section {
+  padding-top: 6px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 26px;
+}
+
+.about-list {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.about-list-item {
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.about-panel {
+  border-radius: 30px;
+  padding: 28px;
+}
+
+.about-panel-header p,
+.about-strength-card p,
+.experience-card p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.about-strengths {
+  margin-top: 22px;
+  display: grid;
+  gap: 16px;
+}
+
+.about-strength-card,
+.experience-card {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-strength-card h4,
+.experience-card h4 {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+}
+
 .skills {
   padding-top: 16px;
 }
@@ -578,6 +635,19 @@ nav.navbar .navbar-toggler-icon::after {
   font-weight: 700;
   font-size: 0.84rem;
   color: var(--text);
+}
+
+.experience-panel {
+  margin-top: 34px;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.experience-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .certificates-panel {
@@ -810,6 +880,22 @@ nav.navbar .navbar-toggler-icon::after {
   margin-top: 28px;
 }
 
+.contact-links {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-link-card {
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-weight: 700;
+}
+
 .contact form input,
 .contact form textarea {
   width: 100%;
@@ -947,8 +1033,10 @@ nav.navbar .navbar-toggler-icon::after {
     margin-bottom: 32px;
   }
 
+  .about-grid,
   .skills-grid,
-  .certificate-grid {
+  .certificate-grid,
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 

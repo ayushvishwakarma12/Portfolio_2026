@@ -1,6 +1,7 @@
 import NavBar from "./components/Navbar";
 import "./App.css";
 import Banner from "./components/Banner";
+import About from "./components/About";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
@@ -12,6 +13,7 @@ function App() {
     <div>
       <NavBar />
       <Banner />
+      <About />
       <Skills />
       <Journey />
       <Projects />

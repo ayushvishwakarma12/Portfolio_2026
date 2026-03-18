@@ -34,6 +34,24 @@ const certificates = [
   "Database Foundations",
 ];
 
+const experienceHighlights = [
+  {
+    title: "Current role focus",
+    description:
+      "Working at ITDesign and growing through enterprise workflows, structured delivery, and practical product collaboration.",
+  },
+  {
+    title: "Tools in progress",
+    description:
+      "Actively learning and applying Java, Clarity PPM, AWS, SQL, and Docker as part of my professional growth path.",
+  },
+  {
+    title: "What I am improving",
+    description:
+      "Stronger system thinking, cleaner implementation habits, and the ability to connect frontend quality with backend and platform reliability.",
+  },
+];
+
 export default function Journey() {
   return (
     <section id="journey" className="section-shell journey">
@@ -69,6 +87,29 @@ export default function Journey() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="experience-panel glass-card">
+          <div className="experience-panel-copy">
+            <span className="eyebrow">ITDesign Experience</span>
+            <h3 className="section-heading" style={{ fontSize: "clamp(1.8rem, 3vw, 2.8rem)" }}>
+              Turning learning into professional execution
+            </h3>
+            <p className="section-copy">
+              My current phase is about moving beyond training projects into
+              real delivery practices. I am using this time to strengthen
+              enterprise tools, improve engineering discipline, and keep my
+              frontend and full stack base sharp.
+            </p>
+          </div>
+          <div className="experience-grid">
+            {experienceHighlights.map((item) => (
+              <div key={item.title} className="experience-card">
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="certificates-panel glass-card">

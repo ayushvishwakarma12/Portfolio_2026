@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import emailjs from "@emailjs/browser";
+import { profile } from "../data/profile";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -102,6 +103,27 @@ export const Contact = () => {
                     opportunities where I can contribute with modern frontend,
                     full stack foundations, and a growing enterprise skill set.
                   </p>
+                  <div className="contact-links">
+                    <a
+                      href={profile.linkedIn}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="contact-link-card"
+                    >
+                      LinkedIn Profile
+                    </a>
+                    <a
+                      href={profile.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="contact-link-card"
+                    >
+                      GitHub Projects
+                    </a>
+                    <a href={profile.resumeFile} download className="contact-link-card">
+                      Download Resume Summary
+                    </a>
+                  </div>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">

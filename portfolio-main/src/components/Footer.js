@@ -1,3 +1,5 @@
+import { profile } from "../data/profile";
+
 export const Footer = () => {
   return (
     <footer>
@@ -14,10 +16,14 @@ export const Footer = () => {
             </div>
             <div className="footer-links">
               <a href="#home">Home</a>
+              <a href="#about">About</a>
               <a href="#skills">Skills</a>
               <a href="#journey">Journey</a>
               <a href="#projects">Projects</a>
               <a href="#connect">Contact</a>
+              <a href={profile.resumeFile} download>
+                Resume Summary
+              </a>
             </div>
           </div>
           <div className="footer-bottom">

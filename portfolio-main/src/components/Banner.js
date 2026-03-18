@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { profile } from "../data/profile";
 
 const rotatingRoles = [
   "Full Stack Developer",
@@ -70,8 +71,12 @@ export default function Banner() {
                 <a href="#journey" className="hero-button primary">
                   Explore My Journey <AiOutlineArrowRight />
                 </a>
-                <a href="#projects" className="hero-button secondary">
-                  View Projects
+                <a
+                  href={profile.resumeFile}
+                  className="hero-button secondary"
+                  download
+                >
+                  Download Resume Summary
                 </a>
               </div>
               <div className="hero-stats">

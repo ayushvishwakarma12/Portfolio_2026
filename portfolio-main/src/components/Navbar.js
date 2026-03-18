@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import { TiSocialLinkedin, TiSocialGithub } from "react-icons/ti";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { profile } from "../data/profile";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -36,6 +37,13 @@ export default function NavBar() {
               Home
             </Nav.Link>
             <Nav.Link
+              href="#about"
+              className={activeLink === "about" ? "active navbar-link" : "navbar-link"}
+              onClick={() => setActiveLink("about")}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
               href="#skills"
               className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
               onClick={() => setActiveLink("skills")}
@@ -67,7 +75,7 @@ export default function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a
-                href="https://www.linkedin.com/in/ayush-vishwakarmaa/"
+                href={profile.linkedIn}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -77,7 +85,7 @@ export default function NavBar() {
                 </span>
               </a>
               <a
-                href="https://github.com/ayushvishwakarma12"
+                href={profile.github}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
